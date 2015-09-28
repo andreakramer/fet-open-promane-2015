@@ -64,13 +64,15 @@ conditions and thereby the (self-)thermophoretic propulsion (or ''swimming'') of
 particles. Their usefulness is enhanced by employing Maxwell-demon type control
 strategies. Prototypes of these genuinely nonequilibrium techniques exist and will be
 employed and refined (e.g. by optimizing dedicated control strategies) within the project.
-One should realize that the assumption of a thermally equilibrated bath is not fulfilled in
-most industrially (oil, polymer melts, dense colloidal or micellar suspensions) or
-biologically relevant (blood, mucus, DNA-solutions) liquids which display visco-elastic
-properties, i.e. elastic behaviour like a solid and viscous behavior like a fluid. As a
-consequence, such fluids exhibit large relaxation times (up to seconds), and can thus easily
-be driven out of thermal equilibrium by a forced colloidal probe. Within this proposal, we
-want to study how the local perturbation of visco-elastic systems affects the dynamics and
+%
+One should realize that the assumption of a thermally equilibrated bath is not fulfilled
+when industrially (oil, polymer melts, dense colloidal or micellar suspensions) or
+biologically relevant (blood, mucus, DNA-solutions) visco-elastic liquids are subject to
+either short processing time or simultaneous drivings (thermal, chemical,
+etc). Nonequilibrium diagnosis and control enters here via immersed colloidal probes.
+%
+Within this proposal, we
+study how the local perturbation of visco-elastic systems affects the dynamics and
 effective interactions of colloidal particles in such media with particular view on
 e.g. memory effects, many body interactions and local non-linear rheological properties.
 Similarly, time-dependent phenomena at very long and even at very fast time scales, such as
@@ -83,137 +85,85 @@ understanding of nonequilibrium response and fluctuation behavior, beyond the tr
 linear response regime, will uncover new parameters to control technological processes, to
 steer motion, and to explore and stabilize new interesting material properties.
 
-\paragraph{Objectives}
-
-can be divided into two major classes:\newline
-\begin{inparaenum}[A.]
-\item exploiting the control and manipulation of probes and devices in contact with nonequilibrium media.  That means to understand the emerging dynamical system immersed in nonequilibria.  It leads to better controlled transport in environments as turbulent atmosphere, active media or nonlinear fluids.  Besides transport, we expect also stabilization and emergence of unseen device properties such as long time coherence and classical dia- and paramagnetic phases, to name a few;\newline
-\item manipulating nonequilibrium media for their response behavior.  The addition of kinetic and nonequilibrium parameters in material design can lead to absolutely new effects in response or susceptibility. Negative compressibilities, thermal or variable conductivities introduce new possibilities and applications for flexible and smart materials.  We will provide a new computational framework for {\it ab initio} calculations of nonequilibirum phase diagrams, opening a new important tool in material and device production.
-\end{inparaenum}
-
-
-Besides the theoretical and experimental underpinning of the recent insights and progress in
-nonequilibrium science, replacing much of the current trial and error methods as mentioned
-above, part of the general objective includes to realize numerical and algorithmic
-methods for efficient simulation of nonequilibrium environments.
-We will provide modelling and simulation techniques for the simulation of probes and
-devices in contact with nonequilibria.  These are high level molecular dynamics codes for
-simulating and calculating the emergent behavior of contacts and probes.  These techniques
-will be made available through all  work packages. It is an important objective
-to make that tool also available to industrial partners, challenged by the complexity of
-dealing with nonequilibria.\newline
+The {\bf objectives} of \TheProject target the design of new materials and devices using the
+development of physical and numerical tools.
+\begin{compactdesc}
+\item[New materials:] Miniature actuators and sensors that exhibit unusual responses to
+compression. Knowing the fast response to external constraints will also suggest new
+processes to assemble parts (for instance, at what speed can one attach glued components
+together). \WPref{WPcompress} gives details on the conception of meta-materials and workable
+implementations of negative compressibilities.
 %
-% Remark from Mark Peletier about the preceding line:
-% Isn't it true that this proposal has no industrial partners?
+Also, the stabilization of otherwise (in equilibrium) unstable macroscopic phases will
+provide yet impossible to build materials.
+\item[Probes:] Characterizing nonequibrium media via, e.g. noninvasive measurement on
+polymer- or colloid-based probes. For the control of colloidal motion in nonequilibrium
+baths and in nonlinear media (\WPref{WPbrown}) we use theoretical and experimental studies
+of probes in visco-elastic solvents. Most fluids found in industry and biology are
+visco-elastic and/or out of equilibrium.
+\item[Control:] The motion of colloids and macromolecules under strong temperature gradient
+depends on the far-from-equilibrium response.
 %
-We will offer a scientific basis and new avenues for the realization of new properties of
-matter (in response and transport), and the enhanced stability of thermodynamic phases or
-behaviour.  See further also in Work Package 2 for the conception of
-meta-materials. Specifically we have good understanding for workable implementations of
-negative compressibilities.\newline
-For the control of colloidal motion in nonequilibrium baths and in nonlinear media we launch (Work Package 3) theoretical and experimental studies of probes in visco-elastic
-solvents.  Most fluids found in industry and biology are visco-elastic and/or out of
-equilibrium.  Control of shear, the development of new separation techniques based on
-dynamical activities and steering of clustering properties are achievable in the current
-project.\newline
-Many challenges are kinetic rather
-than thermodynamic, especially for processes and manipulations in nonequilibrium
-environments or for time-dependent parameters (Work package 4).  Irreversible thermodynamics cannot deal with
-the overwhelming nature of kinetic control, but nonequilibrium statistical insights point to
-the control of dynamical activity; what some of us have called the frenetic contribution.
-One objective is to make a frenometer for operational control and measurement of dynamical
-activity.  That is essential for the control and steering of dynamics out-of equilibrium.
-For example, polymer physics outside equilibrium will supply a necessary and complementary
-component to the vast domain of polymer research with thermodynamic control.\newline
-We will develop the theory of statistical forces on probes in contact with macroscopic
-nonequilibria, essential for controlling motion in turbulent media (atmosphere dynamics) or
-under biological flow (blood streams).  Work Packages 5 and 6 will work with experimental
-and observational predictions of new emergent behavior for probes in nonequilibria, as
-resulting from the essentially nongradient, nonadditive and nonlocal features of these
-nonequilibrium statistical forces.
+Control of shear, new separation techniques based on dynamical activities and steering of
+clustering properties are achievable in the current project.
+\item[Models for nonequilibrium processes:] During \TheProject, simulation software will be
+developped to model nonequilibrium processes. We provide modelling and simulation
+techniques for the simulation of probes and devices in contact with nonequilibria.  These
+are high level molecular dynamics codes for simulating and calculating the emergent behavior
+of contacts and probes. It is an important objective to make that tool also ready to future
+industrial partners who are challenged by the complexity of dealing with nonequilibria.
+\end{compactdesc}
 
+\TheProject pursues the above objectives by developing a scientific basis and new avenues
+for the realization of novel properties of matter (in response and transport), and the
+enhanced stability of thermodynamic phases or behaviour.
+%
+Many challenges are kinetic rather than thermodynamic, especially for processes and
+manipulations in nonequilibrium environments or for time-dependent parameters. Irreversible
+thermodynamics cannot deal with the overwhelming nature of kinetic control, but
+nonequilibrium statistic insights lead to the control of dynamical activity; what some of
+us have called the frenetic contribution.
+%
+To underline the simultaneous conceptual and pragmatic character of \TheProject, we will
+build a frenometer for the operational control and measurement of dynamical activity.
 
-These objectives will find further realizations in our existing contacts with colloidal and
-polymer scientists, micro-electronic and microbio-engineers and atmosphere researchers. Related topics are for
-example found in the physics of polymer folding and for the phase diagram of bio-polymers, the
-mechanical properties of the cytoskeleton and fluctuations of bio-membranes, and the
-statistical analysis and development of climate and weather models. {\bf The overarching goal
-remains to make available the science of nonequilibria to technological and societal
-developments.}
-
+These objectives find further realizations in our existing contacts with colloidal and
+polymer scientists, micro-electronic and microbio-engineers and atmosphere researchers. {\bf
+The overarching goal remains to make available the science of nonequilibria to
+technological and societal developments.}
 
 
 \subsection{Relation to the work programme}\label{sec:relation-wp}
 
-We review here the character of our project \TheProject as appropriate in the light of the
-FET-Open objectives:
 \begin{compactdesc}
-\item[Long-term vision] Current technologies rely on an understanding of thermodynamics that
-dates from half a century ago. The proposed update of the set of tools available to
-scientists and to the industry, on the basis of nonequilibrium thermodynamics, is the first
-step in a change of paradigm across many technological fields.
+\item[Long-term vision] \TheProject enables a change of paradigm across many technological
+fields on the basis of nonequilibrium thermodynamics. Current technologies rely on an
+understanding of thermodynamics that dates from half a century ago and we deliver the
+set of tools to scientists and to the industry that is missing.
 \item[Breakthrough S\&T target] The developments within \TheProject rely directly on
 technological applications, either via relevant physical models or via the experimental
-partners (\site{USTUTT} and \site{ULEI}). Advanced or novel nonequilibrium theories are currently not used in
-the industry and we will provide the building blocks to enable them. One can expect that the
-development of nonequilibrium theories will deliver a competitive advantage, similar in
-principle to the one delivered by pioneers as Carnot, Clausius and Joule in the 19th century that made possible the industrial revolution.
-%
-Concretely, an advantage arises from the development of control strategies (see
-\WPref{WPdissipation}) that are unavailable currently or by the proposed development of new types of
-materials or a better understanding of solvent properties (e.g. viscoelastic media in
-\WPref{WPbrown}).
-\item[Foundational] The project is foundational in the construction of a workable
-nonequilibrium statistical mechanics. A completely new development and emphasis is on the
-study of time-symmetric fluctuations and how the activity of nonequilibria influences the
-dynamics of probes immersed in them. There are strong mathematical and theoretical
-components in the project, especially within the nodes of Leuven, Eindhoven and Prague.  The
-elucidation of statistical forces and colligative properties from nonequilibrium media opens
-many new opportunities for applications of chemical thermodynamics.
+partners (\site{USTUTT} and \site{ULEI}). Advanced or novel nonequilibrium theories are
+currently not used in the industry and we provide the building blocks to enable them
+for the development of new material (\WPref{WPcompress}), ultra fast processes (see XXX)
+and control strategies (\WPref{WPdissipation}) and viscoelastic media (\WPref{WPbrown}).
 \item[Novelty] The changes that we are proposing do not aim at a minor modification of the
 existing processes but at replacing them with a better understanding and, more specifically,
-new strategies for diagnosis and control.  We aim at new unseen material properties, at
-gaining stability of macroscopic phases which are otherwise unstable and at control of
-mesoscopic transport in active media.
-\item[High risk] The gain is high, and so is the risk for missing certain opportunities.  The
-main risk is in the incomplete transfer of tools and knowledge to the technological
-developers.  That is why we will pay also special attention to increased contacts with
-private and industrial partners.  We will organize Industry Days on a European level to
-enhance the exchange of nonequilibrium problems and their solutions.  It will also be
-important to have follow-up projects in direct contact and collaboration with companies and
-economic actors.
-\item[Interdisciplinarity] Since its invention, the field of thermodynamics has extended its
-scope from the study of steam engines to being used in most of the physical sciences and
-engineering disciplines: chemical reactions, materials sciences, biological systems
-(e.g. heat regulation or food chain), information theory, etc. The progresses we envision in
-\TheProject are firmly based on physical models and experiments but domains of application
-go far beyond.
+new strategies for diagnosis and control.
+\item[Foundational] Our work will have a decisive impact on other fields in which the
+control of devices lacks a comprehensive thermodynamical understanding: medicine and
+pharmacology (control of nanoparticles in living systems and targeted delivery mechanisms),
+engineering (fast industrial processes, see XXX).
+\item[High risk] Scientific research carries risks by its very nature, as we are pushing the
+frontiers of knowledge. It may be the case that our ideas stumble on mathematical or
+experimental challenges that would require efforts beyond the 4 yeards of the
+project. Still, the combined expertise in \TheProject offers strong chances of success and
+even before completion many exciting outputs are foreseen (see XXX).
+\item[Interdisciplinarity] \TheProject consists in two experimental physics groups
+(\site{ULEI}, \site{USTUTT}), one mathematical group (\site{TUE}), two theoretical physics
+groups (\site{KUL}, \site{UNIPD}), one of which specialized in simulation methods
+(\site{UNIPD}). This combination allows a consistent organization of the work across work
+packages to deliver results ranging from the conceptual to the proof of principle.
 \end{compactdesc}
-
-
-
-For this FET-open research programme we set as task to provide theoretical and experimental
-ground for dealing with and steering probes in active, driven and nonlinear media.  Many
-aspects of technology, whether in production, optimization or automation, require
-understanding and controlling nonequilibrium processes.  That includes both the traditional
-engineering processes, but also and more than ever, food processing, pharmaceutical,
-biochemical and biomedical applications.  Scientific knowledge is a proven road
-to success in these applications and ranks high compared to high through-put or trial and error
-based methods.  Moreover, having today a choice of so many materials or components, and
-having also available huge data sets can leave the applied scientist paralysed in front of
-the many of today's technological and societal challenges; tradition and experience built
-over the years alone do not suffice.  Solid scientific and high-level understanding are the
-keys to further important developments for sustaining or improving technological levels.
-The present project emphasizes the nonequilibrium aspects, complementing and moving beyond
-the great success of equilibrium statistical mechanics and irreversible thermodynamics in
-obtaining and revolutionizing technology for the last 100 years.
-The present proposal has as major challenge to control and steer devices or materials in contact with and through nonequilibrium and nonlinear environments.  That includes a great number of possible scenarios, including,\\
-a) new materials and material properties:  can one obtain interesting transport coefficients and use them in new situations by contact with rightly monitored nonequilibria.  What are the thermal conductivities or mobilities for nonequilibrium materials?  What are the differential equations of relaxation to nonequilibrium stationary conditions?\\
-b) Biomedical processes and transport: how to control transport of particles in nonequilibrium flows or through living tissues?  How are chemical nonequilibria transduced as signals for mechanical changes? Are self-organized patterns and morphognesis obtained from microscopic nonequilibrium descriptions?\\
-c) Biomechanical structures and motility: how do the mechanical properties change of materials undergoing active processes?  What are the shapes and stresses of bio-materials?\\
-d) Quantum stability and coherence control: can one obtain enhanced stability of quantum structures and coherence by providing nonequilibrium control?\\
-e) Transient and fast processes: Is there a nonequilibrium thermodynamic treatment of quenched dynamics and of ultraslow and ultrafast processes?  What is the validity there of the concept of effective temperature and can one avoid kinetic constraints (with associated many-body localization, jamming, clustering...) via appropriate nonequilibrium control?\\
-
 
 \subsection{Novelty, level of ambition and foundational character}\label{sec:progress}
 
@@ -227,20 +177,18 @@ e) Transient and fast processes: Is there a nonequilibrium thermodynamic treatme
   \end{compactitem}
 }
 
-The first stage of modern thermodynamics consisted in defining equilibrium systems, a field
-that gave rise to equilibrium statistical mechanics. The current knowledge of nonequilibrium
+The first stage of modern thermodynamics consisted in microscopic studies of equilibrium systems, giving rise to equilibrium statistical mechanics. The current body of knowledge concerning nonequilibrium
 physics represents, as we have outlined in Sec.~\ref{sec:objectives}, the {\em second stage}
 of the domain: the study of transport and response theory close to
 equilibrium.
 
-\paragraph{Non dissipative nonequilibrium physics}
 Since about two decades, nonequilibrium studies have revisited steady regimes further away
-from equilibrium, and a fluctuation-response theory is starting to emerge.
-The recently developed idea of dynamical activity starts a new line of conceptual
-understanding that is missing from today's nonequilibrium thermodynamics. The focus on
+from equilibrium, and a fluctuation-response theory is  emerging.
+The recent idea of dynamical activity starts a new line of conceptual
+understanding for today's nonequilibrium thermodynamics. The focus on
 entropy production has brought many insights in the last 150 years (in physics and other
-fields as well, such as information theory) but is however restrictive.  We emphasize the role of excess thermodynamic quantities in relaxation to {\it non}equilibria, and we find that an important role is also being played by time-symmetric fluctuations.
-Volatilities or time-symmetric traffic, frenesy and other names have been given to this dynamical activity which is so important  for a valid fluctuation-response theory away from equilibrium.
+fields as well, such as information theory) but is however restrictive.  We emphasize the role of excess thermodynamic quantities in relaxation to {\it non}equilibria, and we find that a crucial role is also being played by time-symmetric fluctuations.
+Volatilities or time-symmetric traffic, frenesy and other names have been given to this dynamical activity which is all important  for a valid fluctuation-response theory away from equilibrium.
  Our current
 understanding of time-symmetric quantities remains rather formal and most results concern
 specific systems (often ``toy models'') , be it of stochastic or highly chaotic nature.
@@ -249,58 +197,55 @@ specific systems (often ``toy models'') , be it of stochastic or highly chaotic 
 pragmatic, in fluctuation-response theory to open the meaning of dynamical activity, and to
 make it operational.
 %
-Explicitly, we will focus on consequences that can be observed and measured, and on the
+Explicitly, we focus on consequences that can be observed and measured, and on the
 experimental control that this theory brings.
 
-\paragraph{Probing nonequilibrium}
-
-We want to set up a fluctuation and response theory for nonequilibrium media
-from their influence on probe dynamics, and we want to be able to control and monitor a
-system’s behavior from its contact with a nonequilibrium medium. The point is to explore the
-possible very new behaviour and properties of systems in contact with nonequilibrium
-media. A first question one can ask about a probe in active contact with a nonequilibrium
-sea is about the induced systematic statistical forces of the sea on the probe.  One starts
-from the more microscopic mechanical force and, assuming that the probe changes its state
-(e.g. position) on a much slower timescale than the medium, one integrates that mechanical
-force over the degrees of freedom of the stationary medium.  In equilibrium (that is, when
-the probe is in contact with an equilibrium reservoir) the resulting (statistical) forces
-are of gradient type.  The standard thermodynamic potentials are (indeed) the potentials
-from which the force can be derived as in Newtonian mechanics. The result there is that it
-allows us to draw free energy landscapes to understand the changes in the system, as if it
-concerned a conservative mechanical system for which we give the potential energy.  A
-special interesting example are the entropic forces, which work by the power of large
-numbers; then, the free energy has negligible energetic or enthalpic contributions.  These
-are known to be important in elasticity and polymer physics. Moreover, always for
-equilibrium, the statistical forces are additive for example in the sense that bulk
-contributions can easily be separated from boundary contributions.  The latter is crucial
-for thermodynamic behaviour.  For example, the very possibility of thermodynamic behaviour,
-the presence of an equation of state etc depend on that distinction.  All of that need not
-and in general, will not,
-be true for probes (systems, walls, collective coordinates) in contact with (genuine)
-nonequilibrium media or reservoirs. That has possibly
-interesting consequences in the manipulation of such forces, adding oscillatory components,
-going from attractive to repulsive and obtaining nonvanishing resulting forces that
-otherwise, in equilibrium, would be zero from mutually canceling contributions.
+The operational character of our work depends on the numerical implementation of physical
+models and the experimental realization. In both cases, we implement the control and
+monitoring of a system via a nonequilibrium medium, thereby replacing direct feedback
+systems for the control by a monitoring of the kinetic and thermodynamic aspects of
+nonequilibrium baths.
 %
-It also means that the stationary positions of the probe (quasi-static) would be at
-different locations compared with equilibrium, allowing possibly increased stability of
-phases that would otherwise (in equilibrium again) be unstable.  The paradigmatic example is
-here the Kapitza oscillator (pendulum) which remains stable upright when being shaken.  That
-example is however likely to be systematized also outside the theory of dynamical systems,
-reaching then in this project the stability of macroscopic behaviour of the probe
-(collective coordinate) in for equilibrium very unlikely phases and values for order
-parameters.  Needless to add here that this may have dramatic consequences on the phase
-diagram for systems in contact with nonequilibrium media, not only breaking the Gibbs phase
-rule but also introducing new phases of matter.  That is certainly one of the most exciting
-possibilities of explorations in the present project. As another theme of stability we want
-to understand some mechanism of homeostasis. In our set-up we treat spatially extended
-systems with time-dependent boundary driving. We will see under what conditions the bulk of
-the system reaches a steady (time-independent) regime. A related consequence of contact with
-nonequilibrium reservoirs is the possibility of population inversion in the system, which
-will mean that the effective temperature of the probe could be much larger for certain
-purposes.  There will for sure not be the usual Einstein or second fluctuation-dissipation
-relation between noise and friction on the probe which also entails that the friction
-coefficient can show further nontrivial behaviour.  
+A first question is about the behaviour of probes in active contact with a nonequilibrium
+sea; what are the induced systematic statistical forces?
+%
+In equilibrium (that is, when the probe is in contact with an equilibrium reservoir) the
+resulting statistical forces can be derived from a gradient, reminding what is done in
+Newtonian mechanics.
+%
+The result there is that it allows us to draw free energy landscapes to understand the
+changes in the system, as if it concerned a conservative mechanical system for which we give
+the potential energy.
+%
+Moreover, always for equilibrium, the statistical forces are additive. For instance, bulk
+contributions can easily be separated from boundary contributions. The very possibility of
+thermodynamic behaviour, like the presence of an equation of state, depends on that
+distinction.
+%
+All of that need not
+and in general, will not, be true for probes (systems, walls, collective coordinates) in
+contact with (genuine) nonequilibrium media or reservoirs. That has interesting
+consequences in the manipulation of such forces, adding oscillatory components, going from
+attractive to repulsive and obtaining nonvanishing resulting forces that otherwise, in
+equilibrium, would be zero from mutually canceling contributions.  
+%
+It also means that the stationary positions of the probe can be at different locations
+compared with equilibrium, possibly increasing the stability of phases that would otherwise
+(in equilibrium again) be unstable.
+
+The Kapitza oscillator is a pendulum that remains stable upright when being shaken. This
+example is a rather simple dynamical system and we aim in \TheProject at a systematic
+extension of this idea for the stability of macroscopic phases that are very unlikely in
+equilibrium.
+%
+Needless to add here that this may have dramatic consequences on the
+phase diagram for systems in contact with nonequilibrium media, not only breaking the Gibbs
+phase rule but also introducing new phases of matter.  That is certainly one of the most
+exciting possibilities of explorations in the present project. How are for example effects
+like homeostasis and adaptation linked to the nonequilibrium features of the medium and its
+contact with the device?  A related consequence of contact with nonequilibrium reservoirs is
+the possibility of population inversion, which can imply that the effective temperature of
+the probe for example is much larger.
 
 
 \subsection{Research methods}\label{sec:methods}
@@ -313,63 +258,38 @@ coefficient can show further nontrivial behaviour.
   \end{compactitem}
 }
 
-The overall research approach is that of modern physics, with its traditional ways of open
-exchange of ideas and results.  As generic and general as that may sound, the history of the
-last 200 years proves that these make the best and most direct road to innovative technology
-research.  The fundamentally connected components in this research have mathematical,
-conceptual, computational and experimental sides.
+The fundamentally connected components in this \TheProject have mathematical, conceptual,
+computational and experimental sides. The dependent character of these parts is outlined in
+the chronology of the WPs in Sec.~\ref{sec:wp}.
+
+\begin{asparaenum}
+\item {\bf Mathematical methods:} We use stochastic calculus for describing the model
+systems, including their spatially extended and many-body characters.
 %
-We certainly must work to keep up and even improve the exchanges between these efforts and
-to bring about and foster multiple exchanges of ideas and questions.  The way from theory to
-experiment is also the method to reach more applied science and eventually to influence
-industrial and economic research centers and technology.  About all of the project members
-have been asked before in consulting with industrial projects (e.g. water transfer in porous
-media, new challenges for construction physics, crack evolution and creep in glassy
-materials etc) but the present project will allow systematic developments in contacting and
-helping industrial players.
-
-
-1. Mathematical methods: Here we mostly follow stochastic calculus and the specialized
-probabilistic techniques of dealing with spatially extended stochastic dynamics of
-interacting particle systems. Limit theorems and large deviation theory are central tools.
-The Eindhoven node is in the Applied Mathematics department, and Leuven and Prague members
-are part of the research group in mathematical physics.
-
-2. Theoretical framework: Much emphasis remains on path-integral techniques in dynamical
-ensembles.  Such a Lagrangian statistical mechanics takes up the entropy fluxes and the
-changes in dynamical activity to build the action functional for dynamical ensembles.  The
-nonequilibrium techniques will be essentially non-perturbative in the driving, and keeping a
-distance from the Keldysh formalism. Strong theoretical efforts are available in the
-Stuttgart Max Planck Institute for Intelligent Systems, and in the Theoretical Physics
-Institutes of Prague, Leuven, Padova and Leipzig.
-
-3. Computational support: For various model systems that are not covered by analytic results, we use numerical methods and large scale simulation.  Main experts are
-here found in Leuven and in Padova, with various schooling and outreach initiatives to
-promote the computational component.  Molecular dynamics simulations will play a very big role, also because they reach more realistic scenario's that can be implemented and further verified in experimental work and tests.
-
-4. Experimental work: Here we mostly undertake experiments on active materials and particles
-in the appropriate soft condensed and liquid matter labs.  Other questions relate more to
-biophysics and polymer behavior. The experimental component is present in the Stuttgart and
-Leipzig labs.  The experimental side is much based on methods in fluid mechanics and optical control
-
-
-5. Research\&Development.  Our groups are in close contact with research institutes having industrial anc commercial partners.
-As an example, imec in Leuven is very close and mutually involved withing the physics department in Leuven; the PI has students and collaborations there.
-A market survey and business plan is under construction that will possibly include the implementation of nonequilibrum techniques in quantum machines.
-
-
-Overall, this project will also deliver methodology and development tools, such as
-\begin{inparaenum}[A.]
-	\item the making available of strong molecular dynamics simulation codes for the behavior of
-	probes in nonequilibrium media and for the dynamics of active particles;
-	\item the development of operational tools for measuring and quantifying kinetic parameters
-	as used in the theory of dynamical ensembles, including the measurement of excess
-	thermodynamic quantities and dynamical activities;
-	\item providing a toolkit for {\it ab initio} calculations for macroscopic nonequilibrium
-	behavior, possibly allowing new stable phases, including a quantitative description of
-	(also) not-dissipative relaxation to stationary and steady conditions.
-\end{inparaenum}
-
+\site{TUE} and \site{KUL} are recognized experts on applied mathematics and
+mathematical physics.
+\item {\bf Theoretical and conceptual framework:} The proper understanding of thermodynamics
+relies in a consistent definition of the entropy fluxes and of the dynamical activity.
+%
+We will develop an operationally oriented approach to nonequilibrium problems.
+%
+All nodes will participate in this effort.
+\item {\bf Computational support:} Numerical simulations will serve as practical
+implementation of the theoretical model systems and as a supporting tool for the
+experiments.
+%
+They allow us to obtain the most complete description of the physical processes and test our ideas beyond what is analytically possible.
+%
+The computational developments are led by \site{KUL} and \site{UNIPD}.
+%
+For the more realistic scenaries (i.e. for modeling the experiments), Molecular Dynamics
+simulations will be used.
+\item {\bf Experimental work:} The soft condensed and liquid matter laboratories
+(\site{ULEI}, \site{USTUTT}) are familiar with the techniques needed for active materials
+and particles.
+%
+They are experts on the optical control and analysis of colloidal system and on the physical interpretations of the outcomes.
+\end{asparaenum}
 
 \subsection{Interdisciplinary nature}\label{sec:interdisc}
 
@@ -379,32 +299,9 @@ Overall, this project will also deliver methodology and development tools, such 
   \end{compactitem}
 }
 
-Statistical and mathematical physics are by their nature inter-disciplinary.  Not
-only is there very often a large intersection with mathematics, statistics and computer
-science, but also the subjects are often very diverse and reach out in many various
-directions.  The present project, by its foundational character, plays then also on various levels and domains of development. We emphasize the nonequilibrium nature of
-phenomena and processes making contact with condensed matter physics, with
-fluid mechanics and with biological and medical/engineering sciences.  That is quite obvious
-as nonequilibria are ubiquitous.  Discovering common grounds of study and constructing for
-them a nonequilibrium statistical mechanics is exactly  at the heart of the present programme.
-
-Research disciplines that are involved are very diverse. The most amazing examples of
-nonequilibrium are probably found in life processes, or perhaps in the origin of life
-itself.  There we see an open system full of transport processes, with little engines, pumps
-and cycles and the emergence of order on diverse spatio-temporal scales out of molecular
-complexity. In biology, molecular motors give
-mesoscopic realizations of chemical engines and of transport on the molecular scales.  The
-cell itself, how it moves and how its membrane fluctuates on $\mu m$-scales, brings
-nonequilibrium statistical mechanics to life.  Chemical reactions are traditionally also
-sources of nonequilibrium changes.  The variety of phenomena where nonequilibrium considerations are essential is
-however much larger.  We find them at the smallest sizes of nanotechnology. Fluctuations at
-the smallest dimensions produce sources of noise and matter, from which our world is finally
-made.  Turbulent flow and nonlinear systems give macroscopic realizations of nonequilibrium
-effects.  Climatology and ecology ask questions about the atmosphere and ocean dynamics and
-about food web chains as nonequilibrium systems.  
-
-
-
+The consortium joins experts in applied mathematics, mathematical physics, statistical mechanics, polymer science, computational physics, liquid and soft condensed matter physics and fluid mechanics.
+The general theme of nonequilibrium is indeed very  large, and amazing examples of nonequilibria span a great variety of phenomena ranging from nano-technology, over biology to atmosphere physics.
+The researchers involved in the present project have in their own work contributed to the understanding of these various nonequilibrium sides.  Leipzig and Padova nodes have many contributions in biophysics, while Stuttgart is famous for colloidal physics, liquid matter experiments and the study of Casimir forces.  Leuven and Eindhoven nodes represent the more mathematical corners, with emphasis on analytical and stochastic methods.  Still other expertise (like in Padova and Leuven) is present in solving computational and simulation problems.   At the same time, the various labs have closer contacts, both scientific and more industrial, in a variety of disciplines, like sensor-technology, water transfer in porous media, polymer chemistry, financial mathematics, weather prediction and food science to mention a few.
 
 
 %%% Local Variables:

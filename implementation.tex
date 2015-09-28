@@ -67,13 +67,12 @@ Report on work progress is done primarily through the periodic and final reports
 should complement these reports and should be kept to the minimum necessary.
 }
 
-For the theoretical developments and experimental realizations resulting from
-this project to be truly innovative, we will incorporate the blue sky type of
-reasoning that is typical of theoretical physics with practical considerations
-from the experimental environment and the software-based deliverables.
+\TheProject will begin by the setup of theoretical (\WPref{WPcompress},
+\WPref{WPdissipation}) and experimental (\WPref{WPactive}, \WPref{WPbrown}) physical
+models. At the same time, \WPref{WPcore} will lay the basis for the related theoretical
+framework.
 %
-This reasoning is translated in the organization of the workpackages that start
-by discussion forums and follow with concrete developments.
+Then, building on the first round of results the work packages will feed on one another.
 
 \subsection{Management and risk assessment}
 
@@ -87,39 +86,28 @@ by discussion forums and follow with concrete developments.
   \end{compactitem}
 }
 
-\subsection{Consortium as a whole}
-
-\eucommentary{The individual members of the consortium are described in a
-  separate section 4. There is no need to repeat that information here.\\
+The organization of the consortium will be based on the ``DESCA 2020 Model Consortium
+Agreement'' (\url{http://www.desca-2020.eu/}). We rely on the module ``Governance structure
+for Small Collaborative Projects''.
 %
-  \begin{compactitem}
-  \item Describe the consortium. How will it match the project's objectives? How
-    do the members complement one another (and cover the value chain, where
-    appropriate)? In what way does each of them contribute to the project? How
-    will they be able to work effectively together?
-  \item If applicable, describe how the project benefits from any industrial/SME
-    involvement.
-  \item Other countries: If one or more of the participants requesting EU
-    funding is based in a country that is not automatically eligible for such
-    funding (entities from Member States of the EU, from Associated Countries
-    and from one of the countries in the exhaustive list included in General
-    Annex A of the work programme are automatically eligible for EU funding),
-    explain why the participation of the entity in question is essential to
-    carrying out the project.
-  \end{compactitem}
-}
+The members of the general assembly are the lead PI identified in section~\ref{sec:members}.
 
-\subsection{Resources to be committed}
-
-\eucommentary{
-  Please make sure the information in this section matches the costs as stated
-  in the budget table in section 3 of the administrative proposal forms, and the
-  number of person/months, shown in the detailed work package descriptions.\\
+During the kickoff meeting, the participants will set the details of the action plan
+described in the work packages and each participant is responsible for carrying out its
+tasks.
 %
-  \begin{compactitem}
-  \item a table showing number of person/months required (table 3.4a)
-  \item a table showing 'other direct costs' (table 3.4b) for participants where
-    those costs exceed 15\% of the personnel costs (according to the budget
-    table in section 3 of the administrative proposal forms)
-  \end{compactitem}
-}
+We have designed our work packages to allow intermediate interesting results. For instance,
+analytical computations in task~\taskref{WPdissipation}{diss-t3} can be replaced by
+supporting numerical simulations.
+%
+Also, some experimental deliverables are of a very generic nature. The output of, e.g.,
+\delivref{WPbrown}{brown-d1} is interesting {\em independently} of nonequilibrium
+physics.
+
+\makeatletter
+\ifnum\pdataref@num{all}{milestones}{count}=0
+Milestone table missing. Please run \LaTeX\ again.%
+\else%
+\milestonetable%
+\fi
+\makeatother

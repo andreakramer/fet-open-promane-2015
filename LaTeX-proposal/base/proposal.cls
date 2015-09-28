@@ -45,13 +45,13 @@
 \AtBeginDocument{\ifpublic\excludecomment{private}\fi}
 \RequirePackage{tikz}
 \RequirePackage{paralist}
-\RequirePackage[a4paper,margin=18mm]{geometry}
+\RequirePackage[a4paper,margin=16mm]{geometry}
 \RequirePackage{boxedminipage}
 \renewcommand{\thempfootnote}{\roman{mpfootnote}}
 \renewcommand{\familydefault}{\sfdefault}
 \RequirePackage[scaled=.90]{helvet}
 \RequirePackage{textcomp}
-\RequirePackage[sorting=none,hyperref=auto,style=numeric,defernumbers=false,backend=biber,backref=true,firstinits=true,maxbibnames=2]{biblatex}[2010/11-19]
+\RequirePackage[sorting=none,hyperref=auto,bibstyle=proposal-numeric,defernumbers=false,backend=biber,firstinits=true,maxbibnames=2]{biblatex}[2010/11-19]
 \RequirePackage{csquotes}
 \RequirePackage{mdframed}
 \RequirePackage{pdata}
@@ -424,7 +424,7 @@
 \pdataref{mile}\@I{verif}}
 \xdef\mst@lines{\mst@lines\@@line\tabularnewline\hline}}}
 \begin{table}[ht]
-\begin{tabular}{|l|p{2.5cm}|p{7cm}|l|p{4cm}|}\hline
+\begin{tabular}{|l|p{2.5cm}|p{4cm}|l|p{7cm}|}\hline
 \#&\textbf{\miles@legend@name}
 &\textbf{\miles@legend@involved}
 &\textbf{\miles@legend@month}
@@ -570,7 +570,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \ifx\wpfig@end\@true&\@sw{\wpfig@legend@end}\fi}%
 \if@sites%
 \@for\@site:=\prop@gen@sites\do{%
-\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@siteRM{\@site}}}%
+\xdef\wpfig@headline{\wpfig@headline& {\wpfig@legend@siteRM{\@site}}}%
 \if@RAM\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@siteRAM{\@site}}}\fi}%
 \xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@totalRM}}%
 \if@RAM\xdef\wpfig@headline{\wpfig@headline&\@sw{\wpfig@legend@totalRAM}}\fi%
@@ -595,7 +595,7 @@ ganttgray,.60/.60,.60,.60/0,0,.60/0,0,0,.40}
 \newcommand\wpfig@legend@end{\textbf{end}}
 \newcommand\wpfig@legend@siteRM[1]{\site{#1}\if@RAM\ RM\fi}
 \newcommand\wpfig@legend@siteRAM[1]{\site{#1}\ RAM}
-\newcommand\wpfig@legend@totalRM{total\if@RAM\ RM\fi}
+\newcommand\wpfig@legend@totalRM{total~ \if@RAM\ RM\fi}
 \newcommand\wpfig@legend@totalRAM{total RAM}
 \newcommand\wpfig@legend@RM{RM}
 \newcommand\wpfig@legend@RAM{RAM}

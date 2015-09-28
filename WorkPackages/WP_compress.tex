@@ -5,122 +5,94 @@
   UNIPDRM=72,
   KULRM=12]
 
+\newrefsection
 
-\begin{wpobjectives}
+\begin{mdframed}
+\mobjectives
+%
   \begin{compactitem}
-  \item Exploiting the possible negative response to compression of systems holding a heat flow in the design of meta-materials.
-  \item Applying effective fluctuation-response relations to large nonequilibria to make possible fast and efficient upscaling to industrial processes.
-  \item Exhibiting novel architectures of polymers and membranes under flowing conditions. 
+  \item Design meta-materials with a negative response to compression when holding a heat flow.
+  \item Apply effective fluctuation-response relations for the upscaling of industrial processes.
+  \item Exhibit novel architectures of polymers and membranes under flowing conditions.
   \end{compactitem}
-\end{wpobjectives}
 
-\begin{wpdescription}
-
-Monitoring the volume of a system in equilibrium represents a standard procedure for assessing its state 
-variables (pressure, temperature, etc).
-The situation is less clear far from equilibrium: 
-how should we characterize the response to compression of a gas maintained between two temperatures?
-It is not trivial to predict by common sense the behavior of systems under nonequilibrium conditions. 
-One would naively expect a reduction of the volume by increasing the external compression, but there are already 
-several examples of anomalous, or negative, response in nonequilibrium systems.
-We have in mind instances of negative differential mobility, occurring when a particle starts to drift 
-slower by increasing the external drive.
-
-An important class of systems for which we need to understand the nonequilibrium response is that of solids 
-in a temperature gradient. Examples include strongly
-heated micro-cantilevers [AGBB15] and high-quality table-top oscillators of gravitational wave detectors [Cet15].
-In fact, compressibility of solids in a temperature gradient is a quite unexplored subject.
-In this WP we plan to fill this gap.
-We aim at  understanding how the response to compression takes place and how it
-may be predicted by just knowing suitable (unperturbed) steady-state correlations.
-This understanding is important for a second, main stage of this WP, as explained next.
-
+\mdescription
+%
+Strongly heated micro-cantilevers \cite{AGBB15} and high-quality table-top oscillators of
+gravitational wave detectors \cite{Cet13} are examples of systems in a temperature gradient
+where the nonequilibrium response is of practical importance, yet remains unexplored.
+%
+We will characterize this response and design a predictive theory that relies on unperturbed
+steady-state correlations.
 
 The possibility to extract energy from an installed heat channel is the mechanism that we want to
 analyze, to see if it can lead to the behaviour of negative differential compressibility,
 i.e.~the system expands when compressed. 
-Nonequilibrium response may be written as an entropic term minus a frenetic one [BMW09].
+Nonequilibrium response may be written as an entropic term minus a frenetic one \cite{BMW09}.
 In our case the former is the correlation between the size of the system and the entropy produced by the compression.
 The frenetic term is another correlation between size and dynamical aspects that can be monitored numerically.
-This scheme thus furnishes us with a guideline to assess whether simulations of a specific material are yielding data 
-going in the direction of negative compressibility. In particular, since typically the entropic term is positive, we
-are encouraged to privilege the development of models that show a large frenetic term, so that its subtraction from
-the entropic one gives a total negative response.
-We have in this way delineated a guided trial-and-error strategy, in which the notions of 
-nonequilibrium statistical mechanics help us in faster developments of numerical studies. This is expected to
-speed up the research if compared to a blind trial-and-error strategy.
+%
+These two contributions allow an operational assessment of negative compressibility and will
+serve as a guide for a trial-and-error strategy, using nonequilibrium physics to accelerate the
+exploration of new materials.
 
+Metamaterials \cite{NM12,CG15} are candidates for next-generation pressure sensors and
+micro-actuators. Negative compressibility has the potential for enabling these technologies
+and even more ambitious applications such as artificial muscles.
+%
+Steady nonequilibrium conditions are a new ingredient to produce this effect, as opposed to the recently considered
+mechanism of rearrangements from metastable states \cite{NM12} or of enhanced expansions in orthogonal directions
+due to a wine-rack structure of the materials \cite{CG15}.
+%
+The mechanism that we propose is due to compression-enhanced extraction of energy from a
+heat channel. It is fast and does not require going through an hysteresis of the material.
 
-We can consider this WP as a high reward research plan. Indeed, relevant technological applications
-may be boosted by a successful achievement in finding models of materials that have negative compressibility.
-Metamaterials are nowadays much studied [NM12,CG15] because, for example, artificial muscles, 
-next-generation pressure sensors, and micro-actuators would be
-more easily realized by using materials with a negative compressibility. We will investigate
-if steady nonequilibrium conditions could produce this effect, as opposed to the recently considered 
-mechanism of rearrangements from metastable states [NM12] or of enhanced expansions in orthogonal directions
-due to a wine-rack structure of the materials [CG15]. Thus, the anomalous response we seek is in the direction 
-of the compression and it is due to compression-enhanced extraction of energy from a heat channel,
-which is prompt, excites the system expanding it, 
-and does not require going through an hysteresis of the material. 
+\printbibliography[heading=proposal-bib,env=proposal-env]
 
-\begin{compactitem}
-\item ~[AGBB15] F.~Aguilar Sandoval, M.~Geitner, E.~Bertin, L.~Bellon, J.~Appl.~Phys.~{\bf 117}, 234503 (2015).
-\item ~[Cet13] L.~Conti, et al, J.~Stat.~Mech.~P12003 (2013).
-\item ~[BMW09]  M.~Baiesi, C.~Maes,  and B.~Wynants, Phys.~Rev.~Lett.~{\bf 103}, 010602 (2009).
-\item ~[NM12] Z.~G.~Nicolaou and A.~E.~Motter, Nature Mat.~{\bf 11}, 608 (2012).
-\item ~[CG15] A.~B.~Cairns and A.~L.~Goodwin, Phys.~Chem.~Chem.~Phys.~{\bf 17}, 20449 (2015).
-\end{compactitem}
-
-\end{wpdescription}
+\end{mdframed}
 
 \begin{tasklist}
 
   \begin{task}[title=TASK1,id=task1,PM=3,lead=UNIPD,wphases={0-12!1,12-24!0.5}]
- 
-    We plan to characterize the response to compression
-    for models of solids experiencing a heat flow due to different boundary temperatures.
-    By applying available theoretical formulations to the study of numerical simulations,
-    the main aim is to make a setup for the other tasks.
-    
+  We characterize the response to compression
+  for models of solids experiencing a heat flow due to different boundary temperatures.
+  By applying available theoretical formulations to the study of numerical simulations,
+  we prepare appropriate models for subsequent tasks.
   \end{task}
 
   \begin{task}[title=TASK2,id=task2,PM=3,lead=UNIPD,partners=KUL,wphases={12-24!0.5,24-36!1}]
-
-    We are interested in finding if microscopic details, available of course in simulations, 
-    are needed or if a more experimental-like coarse grained description is sufficient or even convenient for
-    predicting the response of the system's length to an increased compression. In practice, for example,
-    by running a simulation of coupled oscillators we assume that only ``macroscopic'' quantities as the system length
-    are measurable and from there we try to see if a coarse-grained fluctuation-response approach is able to
-    describe the behavior of the system when a compression is added.\\
-    The main task of this WP is the to
-        find peculiar inter-particle potentials that may lead to negative 
-        compressibility in solids experiencing heat flows. 
-        We plan to first operate at the conceptual level of toy models, and then to move
-        at a more detailed level of realistic models, always following an effective guided
-        trial-and-error strategy to develop preferentially models with large
-        frenetic term in the response.
-    
+  Identify the microscopic parameters needed to predict the response
+  of a system's length under increased compression, using simulations
+  and {\it ab initio} numerical integration.
+  %
+  The main task of this WP is to find peculiar inter-particle
+  potentials that may lead to negative compressibility in solids
+  experiencing heat flows.
   \end{task}
 
   \begin{task}[title=TASK3,id=task3,PM=6,lead=UNIPD,wphases={18-24!0.5,24-48!1},partners={KUL,ULEI}]
-Important probes for many applications are polymers, and indeed they are often found in nonequilibrium and/or nonlinear environments.
-It is very important for industrial but also for life processes what is the typical shape and the architecture of these polymers, as chemical reactivity can much depend on that.
-Mechanical stresses and nonequilibrium driving in the medium can influence these geometric aspects, and it is therefore crucial to get some control of these features via nonequilibrium monitoring.
-It can lead to enhanced or selective reactivity, depending on the case, but for sure the topics of the workpackage and of the project in general are extremely important for understanding them.
-There will collaborations here with the groups in Leuven (also with Enrico Carlon) and with the Leipzig node.  Regular visits and exchange lectures between Leuven and Padova are already in place.
+  Characterize the typical shape and the architecture of polymers used
+  as probes of nonequilibrium and develop a corresponding control
+  strategy.
+%
+  On this basis, we will also quantify the impact on enhanced or
+  selective reactivity of those polymers with surrounding chemicals.
+  There will collaborations here with the groups in Leuven (with whom
+  frequent visits already occur) and in Leipzig.
   \end{task}
 
 \end{tasklist}
 
 \begin{wpdelivs}
-  \begin{wpdeliv}[due=24,id=mydeliv1,dissem=PU,nature=DEM,lead=UNIPD]
-      {First deliverable, after 2 year: characterization of compressibility for solids between two temperatures.}
+  \begin{wpdeliv}[due=24,id=mydeliv1,dissem=PU,nature=R,lead=UNIPD]
+  {Characterization the compressibility for solids between two temperatures.}
   \end{wpdeliv}
   \begin{wpdeliv}[due=36,id=mydeliv2,dissem=PU,nature=DEM,lead=UNIPD]
-      {Second deliverable, after 3 years: clear picture on how microscopic details are needed to predict compressibility from experiments}
+  {Identification of the microscopic parameters needed to predict compressibility.}
   \end{wpdeliv}
   \begin{wpdeliv}[due=48,id=mydeliv3,dissem=PU,nature=DEM,lead=UNIPD]
-      {Third deliverable, after 4 years: characterization of the compressibility for a wide class of heat-conduction models, understanding of whether negative compressibility is achievable in real systems.}
+  {Characterization of the compressibility for a wider class of heat-conducting materials, and
+    application of negative compressibility to realistic models.}
 \end{wpdeliv}
 \end{wpdelivs}
 

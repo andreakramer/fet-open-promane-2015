@@ -2,8 +2,9 @@
   title=Project Management,short=Management,
   lead=KUL,KULRM=24]
 
-\begin{wpobjectives}
-
+\begin{mdframed}
+\mobjectives
+%
 Provide efficient communication and practical support for the project's events,
 including IT support.
 %
@@ -14,43 +15,28 @@ progress of other work packages and deliverables.
 %
 Coordinate the report on technological perspectives.
 
-\end{wpobjectives}
-
-\begin{wpdescription}
-
+\mdescription
+%
 The coordinator node, via the project manager, oversees the project from the
 administrative point of view. Each node remains responsible for its internal
 (accounting, hiring, etc) management while general project issues will be
 handled at the KUL, including communication to and from the European Commission.
-
-\end{wpdescription}
+\end{mdframed}
 
 \begin{tasklist}
-\begin{task}[title=Reporting,id=mgt-reporting,lead=KUL,PM=6,wphases=0-48!0.125]
-
+\begin{task}[title=Communication,id=mgt-comm,lead=KUL,PM=6,wphases=0-48!0.3]
 Preparation of yearly reports, including the project's final report.
-
-\end{task}
-
-\begin{task}[title=Meetings,id=mgt-meetings,lead=KUL,PM=6,wphases=0-48!0.125]
-
-Organization of the kickoff and subsequent meetings.
-
-\end{task}
-
-\begin{task}[title=IT,id=mgt-IT,lead=KUL,PM=6,wphases=0-48!0.125]
-
+%
 Setup and regular update of the project's website.
 %
-Preparation of data, when needed, for sharing via open data repositories.
-
-\end{task}
-
-\begin{task}[title=comm,id=mgt-comm,lead=KUL,PM=6,wphases=0-48!0.125]
-
 Preparation of media content for the communication of the project: press
 releases, videos, illustrations.
-
+\end{task}
+\begin{task}[title=Meetings,id=mgt-meetings,lead=KUL,PM=6,wphases=0-48!0.15]
+Organization of the kickoff and subsequent meetings.
+\end{task}
+\begin{task}[title=IT,id=mgt-IT,lead=KUL,PM=6,wphases=0-48!0.05]
+Assistance in the preparation of data, when needed, for sharing via open data repositories.
 \end{task}
 \end{tasklist}
 
@@ -59,13 +45,11 @@ releases, videos, illustrations.
   \end{wpdeliv}
   \begin{wpdeliv}[due=1,id=website,dissem=PU,nature=DEC,lead=KUL,miles=start]{Web site}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=6,id=hosting,dissem=PU,nature=R,lead=KUL]{Hosting}
-  \end{wpdeliv}
   \begin{wpdeliv}[due=24,id=media,dissem=PU,nature=R,lead=KUL]{General public media}
   \end{wpdeliv}
   \begin{wpdeliv}[due=24,id=TR1,dissem=PU,nature=R,lead=KUL,miles=framework]{Technological Report 1}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=48,id=finalreport,dissem=CO,nature=R,lead=KUL,miles=final]{Final report of the project}
+  \begin{wpdeliv}[due=48,id=finalreport,dissem=PU,nature=R,lead=KUL,miles=final]{Final report of the project}
   \end{wpdeliv}
   \begin{wpdeliv}[due=48,id=TR2,dissem=PU,nature=R,lead=KUL,miles=final]{Technological Report 2}
   \end{wpdeliv}

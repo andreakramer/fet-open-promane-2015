@@ -6,189 +6,102 @@
 
 \newrefsection
 
-\begin{wpobjectives}
-  \begin{compactitem}
-
-  \item \textbf{Nonequilibrium equations of state (NEOS):} explore the existence of
-  macroscopic nonequilibrium equations of state for active Brownian particle suspensions
-  with microscopic many-particle models.
-  \item \textbf{Active crowding:} elucidate by analytical model calculations how mechanical
-  and chemical activity, such as by molecular motors in the cytoplasm of animal cells,
-  affects the statistical mechanics of embedded biopolymers.
-  \item \textbf{Noise temperature:} validate the concept of a frequency-dependent noise
-  temperature in fluctuation-dissipation relations for colloidal probes 
-  in non-isothermal solvents by experiments and computer simulations
-  \item \textbf{Active-particle suspensions:} scrutinize tentative nonequilibrium equations
-  of state by a combination of experiments and all-atom nonequilibrium molecular-dynamics
-  simulations.
-  \end{compactitem}
-\end{wpobjectives}
-
-\begin{wpdescription}
-In equilibrium, information about the macroscopic state of a medium can be deduced via
-rather simple measurement procedures using simple probes and then be summarized in an
-equation of state.
+\begin{mdframed}
+\mobjectives
 %
-In the future, something similar may become possible even far from equilibrium, and
-revolutionize our technological abilities, but this will require much more sophisticated
-probing and analysing procedures that are not yet generally understood.
+  \begin{compactitem}
+  \item Derive from microscopic many-particle models and check numerically and experimentally 
+  \textbf{nonequilibrium equations of state (NEOS)} for  \textbf{active Brownian particle suspensions}.
+  \item Characterize fluctuations and response of polymeric probes affected by \textbf{active
+    crowding}, e.g. biopolymers excited by molecular motors in the cytoplasm of animal cells.
+  \item Validate in experiment and simulation the concept of a frequency-dependent \textbf{noise temperature} 
+  in fluctuation-dissipation relations for colloidal probes.
+  \end{compactitem}
+
+\mdescription
 %
 Far from equilibrium, fluctuations are non-universal and standard thermodynamic notions,
-such as temperature and pressure, become ambiguous.
-%
+such as temperature and pressure, become ambiguous. 
 This has many unintuitive practical consequences, which defy conventional thermodynamic
-wisdom and potentially invalidate and doom to failure well-established standard
-technological procedures.
-
+wisdom and potentially invalidate standard technological procedures.
+%
 For example, a colloidal particle in a non-isothermal solvent cannot be used for Brownian thermometry 
-in the conventional way \cite{rings-etal:2010,kroy:2014}, and also the proper theoretical 
-treatment of its systematic, thermophoretic propulsion is the subject of ongoing debates.
+in the conventional way \cite{rings-etal:2010,kroy:2014}. In theory, we have shown how to overcome this problem
+in terms of a frequency-dependent noise temperature \cite{falasco-etal:2014}.
 %
-We have recently shown how to overcome some of these limitations in terms of a frequency-dependent noise 
-temperature \cite{falasco-etal:2014}.
+We will validate these ideas experimentally and extend them for other
+nonequilibria, e.g. in active-particle suspensions.
 %
-We want to validate this result experimentally and to see to what extent something similar be achieved for other 
-nonequilibria, particularly in active-particle suspensions.
-
-Further, far from equilibrium, the mechanical pressure on a mesoscopic probe will generally depend on the range and 
-symmetry of the medium-probe interactions: if an active-particle suspension is compressed, the
-amount of work needed may depend on the surface properties of the piston, and it can be macroscopically
-anisotropic and heterogeneous in absence of stationary fluxes. 
+Similarly, the mechanical pressure on a mesoscopic probe will depend on the range and symmetry 
+of the medium-probe interactions \cite{solon-etal:2015}. We will elucidate how. 
 %
-We want to elucidate this within a many-body theory of ``dry active matter'' \cite{marchetti-etal:2013}, 
-to which we successively add elements of ``wet reality'' \cite{zoettl-stark:2014}.
-
-Similarly, motile proteins and motors in a living cell cause deviations of the function
-of its constituents with respect to conventional equilibrium predictions.  We call this
-effect ``active crowding'', in analogy with the much studied ``molecular crowding''. 
+In the context of living cells, motile proteins and molecular motors affect the function
+of its constituents by what  we call ``active crowding'', in analogy with the much studied ``molecular crowding'',
+which can be probed by the conformational degrees of freedom of embedded biopolymers  \cite{otto-etal:2013}.
 %
-Any biopolymer in a living cell actually represents a ``smart'' probe that scans its environment with its many 
-internal degrees of freedom \cite{otto-etal:2013}.
-%
-We could recently demonstrate by theory and simulations that the effect of a quenched static crowding onto an embedded
-polymer can effectively be captured by a parameter renormalization \cite{schoebl-etal:2014}.  
+The effect of quenched static crowding can be captured by a parameter renormalization \cite{schoebl-etal:2014}.  
 %
 Here we ask: can something similar be achieved for active crowding?
-
-The above fundamental issues severely limit a first-principles approach to living systems and
-innovative technological applications involving active matter.
-%
-We address them as systematically as we can (though not comprehensively) with the above
-objectives 1 \& 2 (theoretically) and 3 \& 4 (experimentally and by massively parallel
-computer simulations).
-
-\end{wpdescription}
+\end{mdframed}
 
 \begin{tasklist}
 
-\begin{task}[title=Nonequilibrium equations of state (NEOS),id=task1,PM=8,lead=ULEI,partners={UNIPD,USTUTT},
-wphases=0-48!0.5]
-Phase diagrams and equations of states are fundamental tools in material construction.
-As a paradigm for a nonequilibrium medium we consider the (experimentally vast) class of
-active-particle suspensions, in collaboration with the group in Padova providing expert knowledge on 
+\begin{task}[title=Nonequilibrium equations of state (NEOS),id=task1,lead=ULEI,partners={UNIPD,USTUTT},
+wphases={0-48!0.5,24-30,36-38}]
+Design and characterize a model for active-particle suspensions, together with the group
+in Padova (exchange of personel) that will provide essential expert knowledge on
 nonequilibrium response theory.
 %
-Our starting point is a many-body Langevin equation with a Markovian Gaussian noise
-(describing the coupling to an equilibrium heat bath) and individual propulsion forces for
-the particles representing, on an all-atom-level, the active fluid far from equilibrium \cite{solon-etal:2015}. 
+We start with a many-body Langevin equation, with individual propulsion forces for the
+active particles \cite{solon-etal:2015}, and compute for colloidal probes the effective
+friction kernels, induced mutual interactions and non-gradient forces.
 %
-We let the fluid interact perturbatively with one large colloidal probe particle to
-deduce its effective friction kernel, and with more probe particles in order to
-detect their induced mutual interactions, non-gradient forces, and a possible breaking of
-the action-reaction principle on the probe level.  
+Nonequilibrium response theory (as theoretically developed in the Leuven-Padova nodes) lets us include 
+frenetic contributions in the response functions \cite{baiesi-wynants:2009} and in the mechanical pressure 
+exerted by an active fluid on a probe. 
 %
-Nonequilibrium response theory (as theoretically developed in the Leuven-Padova-Prague nodes) lets us include frenetic contributions in the response
-functions \cite{baiesi-wynants:2009}.
-%
-Of special interest to us is the mechanical pressure exerted by an active fluid on a probe,
-especially if we relax geometric symmetries (tacitly) imposed in previous approaches.
-
-To add elements of reality, we then introduce more realistic particle-probe interactions, as appropriate for the hot
-Janus particles that we sudy in our experiments and simulations.
+Geometric symmetries (tacitly) imposed in previous approaches will be relaxed and realistic particle-probe interactions, 
+as appropriate for the hot Janus particles studied in our experiments and simulations, will be introduced.
 %
 To clarify how active-particle suspensions are fundamentally different from externally driven systems,
-we will search, in close collaboration with Stuttgart, the connection between our particle-based approach 
-and their field theoretical approach.
+we will compare our particle-based approach to the field theoretical approach pursued in Stuttgart (exchange of personel). 
 
 \end{task}
 
 \begin{task}[title=Active Crowding,id=task2,lead=ULEI,partners={KUL},wphases=0-48!0.5]
-Pioneering attempts to estimate how the activity in a living cell affects the physical behavior
-of its constituents predict that it will, via hydrodynamic interactions, enhance the diffusion of
-globular probes or cell organelles \cite{mikhailov-kapral:2015}.
-%
-Yet, it remains open, how such partial results get modified if one considers, for example, that motors or
-other sources of nonequilibrium do often act directly on cytoskeletal polymers and their
-weak transient networks that may get disrupted.
-%
-We want to  investigate how three different types of active
-crowding affect the fluctuation spectrum and dynamics of a semiflexible test polymer: a
-laser-heated metal nanoparticle tracer attached to a micron-sized semiflexible polymer such
-as an actin microfilament; power strokes of attached molecular
-motors inducing backbone tension spikes along the polymer contour; ``inelastic'' \cite{gralka-kroy:2015}
-unbinding of weak bonds, which are the ubiquitous cement of
-cytoskeletal structures, under static or dynamic loads.
-%
-This may have interesting conceptual consequences for mechanical homeostasis, i.e., how cells and tissues bear up against 
-their own activity.   
-%
-On the technological side, it would be most useful to explore conditions for a formal mapping to the situation in 
-non-isothermal liquids, via frequency-dependent noise temperatures and 
-effective friction coefficients \cite{falasco-etal:2014}.
-%
-For these tasks we can build on our previous first-principle analytical studies
-of non-linear nonequilibrium biopolymer dynamics \cite{otto-etal:2013}, non-quasistatic forcible 
-bond kinetics \cite{bullerjahn-sturm-kroy:2014}, and hot Brownian motion 
-\cite{rings-etal:2010,falasco-etal:2014}.
-
+We investigate by analytical theory three different schematic types of active crowding 
+that affect the fluctuation spectrum and dynamics of a semiflexible test polymer \cite{otto-etal:2013}: 
+power strokes of molecular motors inducing backbone tension spikes,
+``inelastic'' \cite{gralka-kroy:2015}unbinding of weak (cytoskeletal) bonds under 
+arbitrarily fast dynamic loading \cite{bullerjahn-sturm-kroy:2014}, and an attached laser-heated metal nanoparticle tracer.
 \end{task}
 
-
 \begin{task}[title=Noise Temperature,id=task3,lead=ULEI,wphases=0-24!0.5]
-We have recently established a tractable ``drosophila'' for the central theme of probing 
-macroscopic nonequilibria in terms so-called non-isothermal (or ``hot'') Brownian motion \cite{rings-etal:2010}.
-%
-Its key quantity is a frequency-dependent temperature for the Brownian noise 
-strength (``noise temperature'') \cite{falasco-etal:2014}.
-%
-Corner stones of statistical mechanics, such as the fluctuation-dissipation theorem, can
-thereby be generalized to conditions far from equilibrium.  
-
-To test these predictions, which are relevant to metal-nanoparticle tracking and trapping technologies and emerging
-nanoscopic Brownian heat engines, beyond the easily accessible Markov limit, requires to follow the fluctuations of 
-a heated Brownian particle on a nanosecond timescale with a positional accuracy of picometers and below, a task 
-that has, even under conventional \emph{equilibrium} conditions, only very recently been achieved \cite{kheifets-etal:2014}.
+We test recent predictions for non-isothermal Brownian motion \cite{rings-etal:2010,falasco-etal:2014}  
+beyond the Markov limit. Our massively parallel numerical simulations \cite{chakraborty-etal:2011} 
+employ (highly compressible) Lennard--Jones solvents, to which we will adapt the theory.
+Experimentally, this requires to follow the fluctuations of 
+a heated Brownian particle on a nanosecond timescale and picometer spatial resolution, which has
+\emph{even in equilibrium} only recently become possible  \cite{kheifets-etal:2014}.
 %
 A dedicated optical trap with dual beam heating and a detection bandwidth of about 50 MHz
 will therefore be newly constructed. 
 %
-Thereby the classical method of Brownian thermometry shall be extended to media far from equilibrium.
-
-To test the theory also by massively parallel numerical simulations \cite{chakraborty-etal:2011}, 
-we will extend the theory for hot nanoparticles in incompressible fluids 
-to Lennard--Jones solvents, which exhibit a substantial compressibility.
+The classical method of Brownian thermometry will hereby be extended to media far from equilibrium.
 \end{task}
 
-\begin{task}[title=Active-Particle Suspensions,id=task4,lead=ULEI,wphases=24-48!0.5]
-Technological applications of active-particle suspensions and systematic tests of
-uncontrolled approximations that are currently unavoidable in all theoretical studies are
+\begin{task}[title=Active Brownian Particle Suspensions,id=task4,lead=ULEI,wphases=24-48!0.5]
+Technological applications of active-particle suspensions  are
 currently severely hampered by a lack of control over these systems.
-%
-Therefore, dedicated experimental investigations are still very rare and some of their
-results might be specific to the experimental realization of the self-propulsion mechanism.
 %
 We have recently established innovative force-free control systems, so-called photon nudging
 and thermophoretic trapping technologies \cite{Qian2013,Braun:NanoLetters:2015}, which deliberately exploit 
 the nonequilibrium transport caused by non-isothermal conditions.
 %
-Thereby we can e.g.\ construct soft walls for passive or active particles that act as
-semi-permeable membranes.
-%
-Our experiments and accompanying "all-atom" Lennard--Jones molecular-dynamics simulations \cite{chakraborty-etal:2011} 
-will employ hot Janus particles, which allow for a continuous tuning of the strength of 
-the activity in space and time, to target 
-possible failures of the description by a thermodynamic bulk-pressure equation of
-state \cite{ginot-etal:2015} due to wall interactions and ensuing "ratcheting" effects.
+Using them in our experiments with hot Janus particles, and accompanying "all-atom" molecular-dynamics 
+simulations \cite{chakraborty-etal:2011}, will allow for a continuous tuning of the strength of 
+the activity and confinement to target failures of thermodynamic bulk-pressure equations of
+state \cite{ginot-etal:2015}.
 \end{task}
 
 
@@ -197,17 +110,17 @@ state \cite{ginot-etal:2015} due to wall interactions and ensuing "ratcheting" e
 \printbibliography[heading=proposal-bib,env=proposal-env]
 
 \begin{wpdelivs}
-\begin{wpdeliv}[due=12,id=D2.3,dissem=PU,nature=DEM,lead=ULEI]
-      {Experimental set-up for noise temperature measurement}
+\begin{wpdeliv}[due=12,id=D2.3,dissem=PU,nature=R,lead=ULEI]
+      {Set-up for measuring noise-temperature}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=24,id=D2.1,dissem=PU,nature=DEM,lead=ULEI]
-      {Theoretical set-up for dynamics in active crowding}
+  \begin{wpdeliv}[due=24,id=D2.1,dissem=PU,nature=R,lead=ULEI]
+      {Set-up for dynamics in active crowding}
   \end{wpdeliv}
-  \begin{wpdeliv}[due=24,id=D2.2,dissem=PU,nature=DEM,lead=ULEI]
-      {Theoretical and numerical models for NEOS of active matter}
+  \begin{wpdeliv}[due=24,id=D2.2,dissem=PU,nature=R,lead=ULEI]
+      {Set up models for NEOS of active matter}
 \end{wpdeliv}
-  \begin{wpdeliv}[due=36,id=D2.4,dissem=PU,nature=DEM,lead=ULEI]
-      {Experimental setup for NEOS-test with hot Janus particles}
+  \begin{wpdeliv}[due=36,id=D2.4,dissem=PU,nature=R,lead=ULEI]
+      {Set up experiment for NEOS test}
 \end{wpdeliv}
 \end{wpdelivs}
 

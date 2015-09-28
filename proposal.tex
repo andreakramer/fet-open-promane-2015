@@ -14,13 +14,17 @@
 \usepackage{framed}
 
 \defbibenvironment{proposal-env}
-{\inparaenum}
+{\inparaenum%
+\renewcommand*\labelenumi{[\theenumi]}}
 {\endinparaenum}
 { \item}
 
 \setdefaultleftmargin{1em}{0.5em}{0.5em}{0.5em}{0.5em}{0.5em}
 
-\defbibheading{proposal-bib}[References]{\paragraph*{#1}}
+\defbibheading{proposal-bib}[References:]{\noindent {\bf #1}}
+
+\newcommand{\mobjectives}{\noindent {\bf Objectives}\par \noindent}
+\newcommand{\mdescription}{\noindent {\bf Description}\par \noindent}
 
 \begin{document}
 
@@ -32,7 +36,6 @@
   site=TUE,
   site=ULEI,
   site=UNIPD,
-  site=FZU,
   site=USTUTT,
   botupPM, % we want to work via bottom up PM distribution,
   coordinator=cmaes,
@@ -50,33 +53,33 @@
 
 \begin{abstract}
 
-\TheProject aims at developing a control theory within nonequilibrium statistical thermodynamics, lifting irreversible thermodynamics and the theory of dynamical systems
-to a unified tool for industrial
-applications and technological development which includes the recent progress in fluctuation and response theory.  New technologies will benefit from the opportunities in the exploration of and the control via
-macroscopic nonequilibria.  These are complex nonlinear systems composed of many constituents which
-are driven subject to nonconservative forces or that are in contact with multiple reservoirs that impose conflicting
-thermodynamic behavior, or for which the constituents are active, {\it i.e.}, containing objects that could be self-propelling.
- Our main hypothesis is that macroscopic
-nonequilibria can be used for steering immersed
-subsystems or probes, thus developing an emerging control theory using
-nonequilibria together with the possibility of creating new macroscopic phases.
+\TheProject will develop a control methodology within nonequilibrium statistical
+thermodynamics, promoting irreversible thermodynamics and dynamical systems to a unified tool for
+industrial
+applications. That includes implementing recent progress in fluctuation and response
+theory from which new technologies will benefit through controlled manipulations of macroscopic
+nonequilibria. The latter are nonlinear systems subject to nonconservative forces or
+driven from contacts with multiple reservoirs that impose conflicting thermodynamic
+behavior, or for which the constituents are active, {\it i.e.}, objects that could be
+self-propelling. Our main hypothesis is that macroscopic nonequilibria can be used for
+steering immersed devices or probes thus developing a control theory,
+with the possibility of creating new macroscopic phases and unusual properties.
 %
-The expected deliverables include enhanced stabilization of
-metastable phases and the control of response parameters and transport coefficients,
-crucial items in developing systematically new material properties. For
-technological avenues our studies will reveal important insights, experimental and
-computational methods for the characterization of real materials; for example by providing
-far-from-equilibrium relaxation times of viscoelastic media. Study of active nonequilibria
-will serve as a common basis for enhanced targeted catalysis, for clustering properties or
-for viscosity reduction in industrial processing. Other possible applications involve
-noninvasive surgeries and drug delivery in medicine, or also the design of smart materials
-with built-in actuation mechanisms.
+The expected deliverables include enhanced stabilization of metastable phases and the
+emergence of new response and transport behaviour, crucial items in developing systematically
+interesting devices and material properties.
+For technological avenues, our work will reveal important insights plus experimental and
+computational methods for example by providing far-from-equilibrium relaxation times of
+visco-elastic media, for targeted catalysis, for clustering control or for viscosity
+reduction in industrial processing. Other possible applications involve noninvasive
+surgeries and drug delivery in medicine, or the design of smart materials with built-in
+actuation mechanisms.
 %
-Many efforts before focused on the destructive and information-erasure roles of dissipation
-and on the return to equilibrium. Time has come to comprehend and exploit the
+Previous efforts focused on the destructive and information-erasure roles of dissipation.
+Time has come to comprehend and exploit the
 constructive role and possibilities of nonequilibrium conditions. Complementary to entropy
 production, changes in kinetics and dynamical activity make statistical forces nongradient
-and nonadditive, allowing unseen and novel behavior. Controlling it opens a new paradigm and major
+and nonadditive, allowing unseen and novel behaviour. Controlling that opens a new paradigm and major
 opportunities for future technology.
 
 \end{abstract}
@@ -111,7 +114,6 @@ opportunities for future technology.
 
 \gantttaskchart[draft,xscale=.33,yscale=.33,milestones]
 
-\subsubsection{Deliverables}\label{sec:deliverables}
 \inputdelivs{9.3cm}
 
 \subsubsection{Milestones}\label{sec:milestones}
@@ -122,10 +124,6 @@ opportunities for future technology.
 % ---------------------------------------------------------------------------
 
 \input{WorkPackages/WorkPackages}
-
-\newpage
-\subsection{Management Structure and Procedures}
-\input{management_structure_and_procedures.tex}
 
 \draftpage
 \subsection{Consortium as a Whole}
@@ -144,7 +142,7 @@ opportunities for future technology.
 \eucommentary{This section is not covered by the page limit.\\
 The information provided here will be used to judge the operational capacity.}
 
-\section{Members of the Consortium}
+\section{Members of the Consortium}\label{sec:members}
 
 \subsection{Participants}
 
@@ -177,32 +175,20 @@ any other supporting documents specified in the work programme for this call.
 \input{Participants/TUE.tex}
 \input{Participants/Leipzig.tex}
 \input{Participants/Padova.tex}
-\input{Participants/FZU.tex}
 \input{Participants/Stuttgart.tex}
 
 \subsection{Third Parties Involved in the Project (including use of third party resources)}
 \label{section:ThirdParties}
 
-\paragraph{Third Party 1}\ 
+No third parties involved.
 
-\eucommentary{Please complete, for each participant, the table
-(see page 27 of "VRETemplate.PDF"),
-or simply state "No third parties involved", if applicable.}
-
-Third Party 1 (hereafter TP1) will work on the project.
-
-\paragraph{Other participants}\ 
-
-For other participants, the only subcontracting costs will be for audit.
-
-\bgroup
-\def\arraystretch{1.5}  % 1 is the default
+\bgroup\def\arraystretch{1.5}  % 1 is the default
 \noindent \begin{tabular}{|p{0.6\textwidth}|c|}
 \hline
 Does the participant plan to subcontract certain
-tasks & Yes \\
+tasks & No \\
 \hline
-\multicolumn{2}{|l|}{Audit} \\
+\multicolumn{2}{|l|}{} \\
 \hline
 Does the participant envisage that part of its work
 is performed by linked third parties & No \\
@@ -215,10 +201,8 @@ third parties & No \\
 \hline
 \multicolumn{2}{|l|}{} \\
 \hline
-\end{tabular}
-\egroup
+\end{tabular}\egroup
 
-%No third parties involved.
 
 % ---------------------------------------------------------------------------
 %  Section 5: Ethics and Security
